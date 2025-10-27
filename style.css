@@ -1,0 +1,100 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(145deg, #0f0f1b, #191933);
+  color: #f8f8f8;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  overflow: hidden;
+}
+
+
+#level-title {
+  font-size: 1.8rem;
+  margin-top: 60px;
+  color: #00ffe1;
+  text-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1;
+}
+
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  padding: 30px;
+  width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+
+.btn {
+  margin: 15px;
+  height: 130px;
+  width: 130px;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.1s, box-shadow 0.2s;
+}
+
+
+.green {
+  background: linear-gradient(145deg, #00ff9d, #00c56b);
+  box-shadow: 0 0 20px #00ff9d;
+}
+
+.red {
+  background: linear-gradient(145deg, #ff5252, #b30000);
+  box-shadow: 0 0 20px #ff4c4c;
+}
+
+.yellow {
+  background: linear-gradient(145deg, #ffeb3b, #c5a500);
+  box-shadow: 0 0 20px #ffe600;
+}
+
+.blue {
+  background: linear-gradient(145deg, #2196f3, #0b60b0);
+  box-shadow: 0 0 20px #00bfff;
+}
+
+
+.btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 30px white;
+}
+
+.pressed {
+  background: #555;
+  transform: scale(0.95);
+  box-shadow: 0 0 40px white;
+}
+
+
+.game-over {
+  background: linear-gradient(145deg, #330000, #ff0000);
+  opacity: 0.8;
+}
+
+
+.credit {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  font-size: 0.8rem;
+  color: #9cecff;
+  text-shadow: 0 0 10px #00ffe1;
+}
